@@ -22,5 +22,3 @@ underthesea
 underthesea
 emoji
 demoji
-sklearn
-tensorflow
