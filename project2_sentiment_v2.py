@@ -541,6 +541,13 @@ elif choice == 'Sentiment Analysis':
                 st.dataframe(result_df)
                 # AgGrid(result_df, fit_columns_on_grid_load=True)
                 download_results = result_df.to_csv().encode('utf-8')
+                
+                # download results
+                st.download_button(label="Download data as CSV",
+                                    data=download_results,
+                                    file_name='predict_results_model2.csv',
+                                    mime='text/csv',
+                                    )
 
 
             elif choice3_model == 'Model 2':
